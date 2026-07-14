@@ -4,13 +4,13 @@
   "version": "0.1.0",
   "description": "Interactive 3D portfolio with zoom-based navigation through space scenes",
   "author": "Vladyslav Shtatskyi",
-  "url": "https://techinz.dev",
+  "url": "https://ghaidoo.tech",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/techinz/galaxy-portfolio"
   },
-  "homepage": "https://techinz.dev",
+  "homepage": "https://ghaidoo.tech",
   "type": "module",
   "scripts": {
     "dev": "vite",

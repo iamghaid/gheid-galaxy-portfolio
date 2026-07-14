@@ -3,7 +3,7 @@
 **A cosmic, interactive 3D portfolio by Vladyslav Shtatskyi - [techinz.dev](https://techinz.dev)**
 
 [![License: Custom](https://img.shields.io/badge/license-personal--use--only-red)](https://github.com/techinz/galaxy-portfolio/blob/main/LICENSE)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-techinz.dev-purple?style=flat-square)](https://techinz.dev)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Ghaidoo.tech-purple?style=flat-square)](https://ghaidoo.tech)
 [![Hours Spent](https://img.shields.io/badge/Hours%20Spent-250%2B-blue?style=flat-square)](https://github.com/techinz/galaxy-portfolio)
 
 ## 📑 Table of Contents
@@ -26,7 +26,7 @@
 
 Welcome to **Galaxy Portfolio** – an interactive 3D portfolio that lets you zoom from the Milky Way galaxy all the way down to my workspace.
 
-**Live Demo:** [techinz.dev](https://techinz.dev)
+**Live Demo:** [Ghaidoo.tech](https://ghaidoo.tech)
 
 ## 📸 Demonstration
 
@@ -220,14 +220,14 @@ For a complete list of all third-party models, textures, icons, and references u
 
 ## 💬 Contact
 
-- **Email:** [contact@techinz.dev](mailto:contact@techinz.dev)
+- **Email:** [gheidabdulkarim@gmail.com](mailto:gheidabdulkarim@gmail.com)
 - **LinkedIn:** [Vladyslav Shtatskyi](https://www.linkedin.com/in/vladyslav-shtatskyi-8752092a7/)
 - **Telegram:** [@playweb3](https://t.me/playweb3)
 
 ## 🤝 Work With Me
 
 I'm available for freelance projects and full-time positions. If you liked this portfolio and need a Software Engineer -
-**[Email me directly](mailto:contact@techinz.dev) to discuss how I can help you.**
+**[Email me directly](mailto:gheidabdulkarim@gmail.com) to discuss how I can help you.**
 
 ---
 

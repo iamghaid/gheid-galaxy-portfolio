@@ -2,7 +2,6 @@ import { Canvas } from '@react-three/fiber';
 import { Preload } from '@react-three/drei';
 import { Suspense } from 'react';
 import SceneTextComponent from './ui/SceneText';
-import EarthToHomeVideo from './ui/EarthToHomeVideo';
 import { MobileProvider, useMobile } from './contexts/MobileContext';
 import { useSceneStore } from './core/SceneManager';
 import { AssetManager } from './core/AssetManager';
@@ -80,7 +79,6 @@ function AppContent() {
           <NavigationHint />
           <ZoomProgressIndicator />
           <SceneTextComponent />
-          <EarthToHomeVideo />
           <GitHubLink />
         </>
       )}
