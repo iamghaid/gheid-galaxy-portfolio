@@ -275,7 +275,7 @@ export const IMAGE_SCENE = {
     IMAGES_DATA: {
         continent: { width: 887, height: 852, targetRepeat: { x: 0.1, y: 0.1 }, targetCoords: { x: 25, y: 610 } },
         city: { width: 1140, height: 822, targetRepeat: { x: 0.1, y: 0.1 }, targetCoords: { x: 490, y: 372 } },
-        district: { width: 1191, height: 565, targetRepeat: { x: 0.1, y: 0.1 }, targetCoords: { x: 427, y: 110 } },
+        district: { width: 1600, height: 800, targetRepeat: { x: 0.1, y: 0.1 }, targetCoords: { x: 653, y: 652 } },
     }
 }
 
