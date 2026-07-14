@@ -33,11 +33,11 @@ function SceneTextComponent() {
       case 'earth':
         return { header: 'Earth', sub: 'Planet' };
       case 'continent':
-        return { header: 'Europe', sub: 'Continent' };
+        return { header: 'Saudi Arabia', sub: 'Asia' };
       case 'city':
-        return { header: 'Hannover, Germany', sub: 'City' };
+        return { header: 'Jeddah, Saudi Arabia', sub: 'City' };
       case 'district':
-        return { header: 'Mitte, Hannover', sub: 'District' };
+        return { header: 'Al Marwah, Jeddah', sub: 'District' };
       case 'room':
         return { header: 'My Studio', sub: 'Workspace' };
       default:

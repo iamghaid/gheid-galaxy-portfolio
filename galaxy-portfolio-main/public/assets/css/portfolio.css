@@ -1022,6 +1022,11 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
