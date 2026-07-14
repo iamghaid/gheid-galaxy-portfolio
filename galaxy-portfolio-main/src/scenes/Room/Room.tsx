@@ -49,6 +49,32 @@ export function Room() {
     }
   }, [roomGLTF]);
 
+  // hide masculine-coded decor (bike, DJ console, original brand mark) and re-tone key furniture
+  useEffect(() => {
+    if (!roomGLTF) return;
+
+    const bike = roomGLTF.scene.getObjectByName("Bike");
+    if (bike) bike.visible = false;
+
+    const djConsole = roomGLTF.scene.getObjectByName("DjConsole");
+    if (djConsole) djConsole.visible = false;
+
+    const originalLogo = roomGLTF.scene.getObjectByName("techinz.dev");
+    if (originalLogo) originalLogo.visible = false;
+
+    const sofa = roomGLTF.scene.getObjectByName("Sofa") as any;
+    if (sofa && sofa.material) {
+      sofa.material = sofa.material.clone();
+      sofa.material.color.set('#d98ba0'); // dusty rose
+    }
+
+    const chairTop = roomGLTF.scene.getObjectByName("ChairTop") as any;
+    if (chairTop && chairTop.material) {
+      chairTop.material = chairTop.material.clone();
+      chairTop.material.color.set('#e8b4c8'); // soft pink
+    }
+  }, [roomGLTF]);
+
   // get screen position (monitor or phone) in the room model to zoom in
   function getScreenPosition() {
     let screenPosition: Vector3 = new Vector3(0, 0, 0);
