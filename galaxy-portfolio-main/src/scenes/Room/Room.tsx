@@ -59,7 +59,7 @@ export function Room() {
     const djConsole = roomGLTF.scene.getObjectByName("DjConsole");
     if (djConsole) djConsole.visible = false;
 
-    const originalLogo = roomGLTF.scene.getObjectByName("techinz.dev");
+    const originalLogo = roomGLTF.scene.getObjectByName("Ghaidoo.tech");
     if (originalLogo) originalLogo.visible = false;
 
     const sofa = roomGLTF.scene.getObjectByName("Sofa") as any;
