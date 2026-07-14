@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useThree } from "@react-three/fiber";
 import { GLOBAL, DEVICE, ROOM, SCENE_MANAGER } from "../../config/config";
 import { gsap } from "gsap";
-import { useGLTF } from '@react-three/drei';
+import { useGLTF, Text } from '@react-three/drei';
 import { useMobile } from "../../contexts/MobileContext";
 import { useSceneStore } from "../../core/SceneManager";
 import { createNavigationAnimation } from "../../utils/navigationAnimation";
@@ -59,7 +59,7 @@ export function Room() {
     const djConsole = roomGLTF.scene.getObjectByName("DjConsole");
     if (djConsole) djConsole.visible = false;
 
-    const originalLogo = roomGLTF.scene.getObjectByName("Ghaidoo.tech");
+    const originalLogo = roomGLTF.scene.getObjectByName("techinz.dev");
     if (originalLogo) originalLogo.visible = false;
 
     const sofa = roomGLTF.scene.getObjectByName("Sofa") as any;
@@ -191,6 +191,20 @@ export function Room() {
       <primitive object={roomGLTF.scene} position={[0, -1, 0]} scale={[1, 1, 1]}>
         <Monitor roomGLTF={roomGLTF} />
         <Phone roomGLTF={roomGLTF} />
+        <Text
+          position={[-7.859458923339844, 5.950799942016602, 0.5909459590911865]}
+          quaternion={new Quaternion(0.5, 0.5, -0.5, 0.5).multiply(
+            new Quaternion().setFromAxisAngle(new Vector3(1, 0, 0), -Math.PI / 2)
+          )}
+          scale={0.4247822165489197}
+          fontSize={1}
+          color="white"
+          anchorX="left"
+          anchorY="top"
+          maxWidth={4}
+        >
+          Ghaidoo.tech
+        </Text>
       </primitive>
     </group>
   );

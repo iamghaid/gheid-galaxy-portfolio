@@ -1,6 +1,6 @@
 # <img src="public/favicon/favicon-32x32.png" width="32" alt="🌌" style="vertical-align:middle;"> Galaxy Portfolio
 
-**A cosmic, interactive 3D portfolio by Vladyslav Shtatskyi - [Ghaidoo.tech](https://ghaidoo.tech)**
+**A cosmic, interactive 3D portfolio by Vladyslav Shtatskyi - [techinz.dev](https://techinz.dev)**
 
 [![License: Custom](https://img.shields.io/badge/license-personal--use--only-red)](https://github.com/techinz/galaxy-portfolio/blob/main/LICENSE)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Ghaidoo.tech-purple?style=flat-square)](https://ghaidoo.tech)
