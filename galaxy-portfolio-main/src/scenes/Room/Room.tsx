@@ -54,13 +54,23 @@ export function Room() {
     if (!roomGLTF) return;
 
     const bike = roomGLTF.scene.getObjectByName("Bike");
-    if (bike) bike.visible = false;
+    if (bike) bike.removeFromParent();
 
     const djConsole = roomGLTF.scene.getObjectByName("DjConsole");
-    if (djConsole) djConsole.visible = false;
+    if (djConsole) djConsole.removeFromParent();
 
     const originalLogo = roomGLTF.scene.getObjectByName("techinz.dev");
-    if (originalLogo) originalLogo.visible = false;
+    if (originalLogo) originalLogo.removeFromParent();
+
+    // fallback: catch any remaining node whose name still references the old brand,
+    // in case of naming/casing variants not caught by the exact match above
+    const toRemove: any[] = [];
+    roomGLTF.scene.traverse((child: any) => {
+      if (typeof child.name === 'string' && child.name.toLowerCase().includes('techinz')) {
+        toRemove.push(child);
+      }
+    });
+    toRemove.forEach((child) => child.removeFromParent());
 
     const sofa = roomGLTF.scene.getObjectByName("Sofa") as any;
     if (sofa && sofa.material) {
