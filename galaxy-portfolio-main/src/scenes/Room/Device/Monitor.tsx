@@ -289,7 +289,7 @@ const Monitor: React.FC<MonitorProps> = ({ roomGLTF }): JSX.Element => {
                     {/* web content (portfolio) */}
                     <div className={styles['web-content']}>
                         <iframe
-                            src="/templates/Portfolio.html"
+                            src="https://gheid.lovable.app"
                             title="Portfolio"
                             className={styles['web-iframe']}
                         />

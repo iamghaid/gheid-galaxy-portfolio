@@ -224,10 +224,15 @@ export function Room() {
           )}
           scale={0.4247822165489197}
           fontSize={1}
-          color="white"
+          color="#00fff2"
+          outlineWidth={0.06}
+          outlineColor="#00fff2"
+          outlineOpacity={0.6}
+          outlineBlur={0.12}
           anchorX="left"
           anchorY="top"
           maxWidth={4}
+          material-toneMapped={false}
         >
           Ghaidoo.tech
         </Text>
