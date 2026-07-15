@@ -273,7 +273,7 @@ export const EARTH = {
 export const IMAGE_SCENE = {
     IMAGE_PLANE_POSITION: new Vector3(5, 5, 5), // image position
     IMAGES_DATA: {
-        continent: { width: 887, height: 852, targetRepeat: { x: 0.1, y: 0.1 }, targetCoords: { x: 25, y: 610 } },
+        continent: { width: 559, height: 294, targetRepeat: { x: 0.1, y: 0.1 }, targetCoords: { x: 75, y: 150 } },
         city: { width: 1140, height: 822, targetRepeat: { x: 0.1, y: 0.1 }, targetCoords: { x: 490, y: 372 } },
         district: { width: 1600, height: 800, targetRepeat: { x: 0.1, y: 0.1 }, targetCoords: { x: 653, y: 652 } },
     }

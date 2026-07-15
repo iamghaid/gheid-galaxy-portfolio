@@ -83,6 +83,22 @@ export function Room() {
       chairTop.material = chairTop.material.clone();
       chairTop.material.color.set('#e8b4c8'); // soft pink
     }
+
+    // the old brand mark turned out to be baked into a wall's texture (not a separate,
+    // removable mesh), so paint the walls solid black and drop their texture map entirely
+    // to guarantee nothing old shows through. Our own "Ghaidoo.tech" text (added separately)
+    // sits in front of this and stays visible.
+    ["Wall1", "Wall2", "Wall3", "Wall4"].forEach((wallName) => {
+      const wall = roomGLTF.scene.getObjectByName(wallName) as any;
+      if (wall && wall.material) {
+        wall.material = wall.material.clone();
+        wall.material.map = null;
+        wall.material.emissiveMap = null;
+        wall.material.emissive?.set('#000000');
+        wall.material.color.set('#050505');
+        wall.material.needsUpdate = true;
+      }
+    });
   }, [roomGLTF]);
 
   // get screen position (monitor or phone) in the room model to zoom in
